@@ -1,7 +1,7 @@
 # FizzBuzz task 
 
 Task:
-* Create a FizzBuzz function in fizzbuzz package
+* Create a FizzBuzz function
 * The function must take an integer as an argument
 * The function must return 3 integers in next order:
 1. the number of numbers that are divisible by 3
