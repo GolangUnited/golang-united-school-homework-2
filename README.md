@@ -1,12 +1,11 @@
-# FizzBuzz task 
+# Square task 
 
-Task:
-* Create a FizzBuzz function
-* The function must take an integer as an argument
-* The function must return 3 integers in next order:
-1. the number of numbers that are divisible by 3
-2. the number of numbers that are divisible by 5
-3. the number of numbers that are divisible by 3 and 5
-
-To run tests for this code, execute cmd "go test -v ."
-Tasks considered as completed in case test is not failed
+Implement function to calculate square of an equilateral figurine following rules:
+* `func CalcSquare(sideLen float64, sidesNum int) float64` 
+* `CalcSquare` func must return correct square for:
+   * equilateral triangle(3 sides),
+   * square(4 sides) 
+   * circle(0 sides) (count sideLen as radius)
+   * if any other `sideNum` param is passed, return 0
+* built-in Pi constant must be used to bypass the test
+* Package name should be `square`
