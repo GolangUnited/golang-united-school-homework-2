@@ -1,7 +1,18 @@
 # Square task 
 
+How to:
+---
+* Clone the repo  
+* run `go mod init somename`
+* run `go mod tidy`
+* Edit `solution.go` 
+	* it contains correct package name 
+	* follow comments placeholder
+
+Tasks:
+---
 Implement function to calculate square of an equilateral figurine following rules:
-* `func CalcSquare(sideLen float64, sidesNum int) float64` 
+* `func CalcSquare(sideLen float64, sidesNum intCustomType) float64` 
 * `CalcSquare` func must return correct square for:
    * equilateral triangle(3 sides),
    * square(4 sides) 
