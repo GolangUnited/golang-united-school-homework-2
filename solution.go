@@ -7,6 +7,7 @@ package square
 // CalcSquare(10.0, SidesTriangle)
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
+//test
 
 func CalcSquare(sideLen float64, sidesNum #yourTypeNameHere#) float64 {
 }
