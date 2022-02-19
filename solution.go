@@ -20,11 +20,12 @@ const (
 )
 
 func CalcSquare(sideLen float64, sidesNum myInt) float64 {
-	if sidesNum == SidesCircle {
+	switch sidesNum {
+	case SidesCircle:
 		area = math.Pi * (sideLen * sideLen)
-	} else if sidesNum == SidesTriangle {
+	case SisesTriangle:
 		area = (math.Sqrt(3) / 4) * (sideLen * sideLen)
-	} else if sidesNum == SidesSquare {
+	case SidesSquare:
 		area = sideLen * sideLen
 	}
 	return area
