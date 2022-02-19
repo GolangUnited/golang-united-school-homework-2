@@ -9,17 +9,17 @@ import "math"
 // CalcSquare(10.0, SidesTriangle)
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
-type MyInt int
+type myInt int
 
 var area float64
 
 const (
-	SidesCircle   MyInt = 0
-	SidesTriangle MyInt = 3
-	SidesSquare   MyInt = 4
+	SidesCircle   myInt = 0
+	SidesTriangle myInt = 3
+	SidesSquare   myInt = 4
 )
 
-func CalcSquare(sideLen float64, sidesNum MyInt) float64 {
+func CalcSquare(sideLen float64, sidesNum myInt) float64 {
 	if sidesNum == SidesCircle {
 		area = math.Pi * (sideLen * sideLen)
 	} else if sidesNum == SidesTriangle {
