@@ -11,8 +11,6 @@ import "math"
 // CalcSquare(10.0, SidesCircle)
 type myInt int
 
-var area float64
-
 const (
 	SidesCircle   myInt = 0
 	SidesTriangle myInt = 3
@@ -20,10 +18,12 @@ const (
 )
 
 func CalcSquare(sideLen float64, sidesNum myInt) float64 {
+	var area float64
+
 	switch sidesNum {
 	case SidesCircle:
 		area = math.Pi * (sideLen * sideLen)
-	case SisesTriangle:
+	case SidesTriangle:
 		area = (math.Sqrt(3) / 4) * (sideLen * sideLen)
 	case SidesSquare:
 		area = sideLen * sideLen
