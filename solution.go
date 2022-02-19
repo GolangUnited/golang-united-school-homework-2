@@ -22,7 +22,7 @@ const (
 func CalcSquare(sideLen float64, sidesNum MyInt) float64 {
 	if sidesNum == SidesCircle {
 		area = math.Pi * (sideLen * sideLen)
-	} else if SidesTriangle == 3 {
+	} else if sedesNum == SidesTriangle {
 		area = (math.Sqrt(3) / 4) * (sideLen * sideLen)
 	} else {
 		area = sideLen * sideLen
