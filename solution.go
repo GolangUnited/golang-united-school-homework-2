@@ -2,22 +2,20 @@ package square
 
 import "math"
 
-type sides int
+type myType int
 
-func CalcSquare(sideLen float64, sidesNum sides) (res float64) {
+func CalcSquare(sideLen float64, sidesNum myType) (res float64) {
 
-	const SidesTriangle = 3
-	const SidesSquare = 4
-	const SidesCircle = 0
+	const SidesCircle myType = 0
+	const SidesTriangle myType = 3
+	const SidesSquare myType = 4
 
-	switch sidesNum {
-	case SidesTriangle:
-		return math.Sqrt(3*sideLen*sideLen) / 4
-	case SidesSquare:
-		return sideLen * sideLen
-	case SidesCircle:
-		return math.Pi * sideLen * sideLen
-	default:
-		return 0
+	if sidesNum == SidesTriangle {
+		res = (math.Pow(sideLen, 2.0) * math.Sqrt(3.0)) / 4
+	} else if sidesNum == SidesSquare {
+		res = math.Pow(sideLen, 2.0)
+	} else if sidesNum == SidesCircle {
+		res = math.Pi * math.Pow(sideLen, 2.0)
 	}
+	return
 }
