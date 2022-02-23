@@ -8,12 +8,11 @@ const (
 	SidesCircle   SidesCount = 0
 	SidesTriangle SidesCount = 3
 	SidesSquare   SidesCount = 4
-	PI            float64    = math.Pi
 )
 
 func CalcSquare(sideLen float64, sidesNum SidesCount) float64 {
 	if sidesNum == SidesCircle {
-		return PI * sideLen * sideLen
+		return math.Pi * sideLen * sideLen
 	}
 
 	if sidesNum == SidesTriangle {
