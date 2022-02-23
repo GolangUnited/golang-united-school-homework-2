@@ -11,13 +11,17 @@ import "math"
 // CalcSquare(10.0, SidesCircle)
 
 func CalcSquare(sideLen float64, sidesNum float64) float64 {
+
+	const SidesCircle = 0
+	const SidesSquare = 4
+	const SidesTriangle = 3
 	switch sidesNum {
-	case 0:
+	case SidesCircle:
 		return math.Pi * sideLen * sideLen
 
-	case 3:
+	case SidesTriangle:
 		return (math.Sqrt(3) / 4) * math.Pow(sideLen, 2)
-	case 4:
+	case SidesSquare:
 		return sideLen * sideLen
 	default:
 		return 0
