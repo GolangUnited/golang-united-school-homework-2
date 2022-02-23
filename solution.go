@@ -18,7 +18,7 @@ const (
 )
 
 func CalcSquare(sideLen float64, sidesNum myInt) float64 {
-	var area float64
+	var area float64 = 0
 
 	switch sidesNum {
 	case SidesCircle:
