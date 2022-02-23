@@ -9,24 +9,24 @@ import "math"
 // CalcSquare(10.0, SidesTriangle)
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
-
-type sideNumber int
+type myInt int
 
 const (
-	sideCircle    sideNumber = 0
-	sideTriangle  sideNumber = 3
-	sideRectangle sideNumber = 4
+	SidesCircle   myInt = 0
+	SidesTriangle myInt = 3
+	SidesSquare   myInt = 4
 )
 
-func CalcSquare(sideLen float64, sidesNum sideNumber) float64 {
-	sideLenSquare := sideLen * sideLen
+func CalcSquare(sideLen float64, sidesNum myInt) float64 {
+	var area float64
+
 	switch sidesNum {
-	case sideCircle:
-		return sideLenSquare * math.Pi
-	case sideTriangle:
-		return sideLenSquare * math.Sqrt(3) / 4
-	case sideRectangle:
-		return sideLenSquare
+	case SidesCircle:
+		area = math.Pi * (sideLen * sideLen)
+	case SidesTriangle:
+		area = (math.Sqrt(3) / 4) * (sideLen * sideLen)
+	case SidesSquare:
+		area = sideLen * sideLen
 	}
-	return 0
+	return area
 }
