@@ -1,4 +1,4 @@
-package square
+package shapes
 
 import "math"
 
