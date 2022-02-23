@@ -1,4 +1,4 @@
-package shapes_test
+package shapes
 
 import (
 	"math"
