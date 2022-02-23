@@ -12,20 +12,20 @@ import "math"
 type figureSide int
 
 const (
-	SideCircle   figureSide = 0
-	SideTriangle figureSide = 3
-	SideSquare   figureSide = 4
+	SidesCircle   figureSide = 0
+	SidesTriangle figureSide = 3
+	SidesSquare   figureSide = 4
 )
 
 func CalcSquare(sideLen float64, sidesNum figureSide) float64 {
 	var area float64 = 0
 
 	switch sidesNum {
-	case SideCircle:
+	case SidesCircle:
 		area = area + math.Pi*(sideLen*sideLen)
-	case SideTriangle:
+	case SidesTriangle:
 		area = area + (math.Sqrt(3)/4)*(sideLen*sideLen)
-	case SideSquare:
+	case SidesSquare:
 		area = area + sideLen*sideLen
 	}
 	return area
