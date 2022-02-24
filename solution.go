@@ -4,7 +4,7 @@ import (
 	"math"
 )
 
-type figurSide int
+type figureSide int
 
 // Define custom int type to hold sides number and update CalcSquare signature by replacing #yourTypeNameHere#
 
@@ -20,7 +20,7 @@ const (
 	SidesCircle   = 0
 )
 
-func CalcSquare(sideLen float64, sidesNum figurSide) float64 {
+func CalcSquare(sideLen float64, sidesNum figureSide) float64 {
 	switch sidesNum {
 	case SidesCircle:
 		return float64(math.Pi * math.Pow(sideLen, 2))
