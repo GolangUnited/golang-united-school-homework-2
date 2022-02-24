@@ -9,14 +9,21 @@ import "math"
 // CalcSquare(10.0, SidesTriangle)
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
+type sidesType int64
 
-func CalcSquare(sideLen float64, sidesNum int64) float64 {
+const (
+	SidesCircle   int64 = 0
+	SidesTriangle int64 = 3
+	SidesSquare   int64 = 4
+)
+
+func CalcSquare(sideLen float64, sidesNum sidesType) float64 {
 	switch sidesNum {
-	case 4:
+	case sidesType(SidesSquare):
 		return (math.Pow(sideLen, 2))
-	case 3:
+	case sidesType(SidesTriangle):
 		return (math.Pow(sideLen, 2) * math.Sqrt(3) / 4)
-	case 0:
+	case sidesType(SidesCircle):
 		return (math.Pow(sideLen, 2) * math.Pi)
 	default:
 		return (0)
