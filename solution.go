@@ -15,9 +15,9 @@ type figureSide int
 // CalcSquare(10.0, SidesCircle)
 
 const (
-	SidesTriangle = 3
-	SidesSquare   = 4
-	SidesCircle   = 0
+	SidesTriangle figureSide = 3
+	SidesSquare   figureSide = 4
+	SidesCircle   figureSide = 0
 )
 
 func CalcSquare(sideLen float64, sidesNum figureSide) float64 {
