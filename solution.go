@@ -10,13 +10,25 @@ import "math"
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 
-func CalcSquare(sideLen float64, sidesNum int) float64 {
-	if sidesNum == 4 {
-		return float64(math.Pow(sideLen, 2))
-	} else if sidesNum == 3 {
-		return float64(math.Pow(sideLen, 2) * math.Sqrt(3) / 4)
-	} else {
-		return float64(math.Pow(sideLen, 2) * math.Pi)
-	}
+const (
+	SidesCircle SidesNumber =0
+	SidesTriangle SidesNumber =3
+	SidesSquare SidesNumber =4
+)
+
+func CalcSquare(sideLen float64, sidesNum SidesNumber) float64 {
+
+	switch sidesNum{
+	case SidesTriangle:
+		return (sideLen*sideLen*math.Sqrt(3)/4)
+	
+	case SidesSquare:
+		return (sideLen*sideLen)
+
+	case SidesCircle:
+		return (math.Pi*sideLen*sideLen)
+		
+	default:
+		return (0)
 
 }
