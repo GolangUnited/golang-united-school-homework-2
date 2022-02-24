@@ -11,12 +11,12 @@ import "math"
 // CalcSquare(10.0, SidesCircle)
 
 func CalcSquare(sideLen float64, sidesNum int64) float64 {
-	switch {
-	case sidesNum == 4:
+	switch sidesNum {
+	case 4:
 		return (math.Pow(sideLen, 2))
-	case sidesNum == 3:
+	case 3:
 		return (math.Pow(sideLen, 2) * math.Sqrt(3) / 4)
-	case sidesNum == 0:
+	case 0:
 		return (math.Pow(sideLen, 2) * math.Pi)
 	default:
 		return (0)
