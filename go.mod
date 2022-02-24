@@ -1,3 +1,3 @@
-module main
+module square
 
 go 1.16
