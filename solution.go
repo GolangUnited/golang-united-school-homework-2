@@ -12,9 +12,9 @@ import "math"
 type sidesType int64
 
 const (
-	SidesCircle   int64 = 0
-	SidesTriangle int64 = 3
-	SidesSquare   int64 = 4
+	SidesCircle   sidesType = 0
+	SidesTriangle sidesType = 3
+	SidesSquare   sidesType = 4
 )
 
 func CalcSquare(sideLen float64, sidesNum sidesType) float64 {
