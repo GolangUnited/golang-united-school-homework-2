@@ -12,7 +12,7 @@ package solution
 
 import "math"
 
-var sides int; 
+type Sides int; 
 
 const (
 		SidesCircle = 0;
@@ -20,11 +20,11 @@ const (
 		SidesSquare = 4;
 )
 
-func CalcSquare(sideLen float64, sidesNum sides) float64 {
+func CalcSquare(sideLen float64, sidesNum Sides) float64 {
 	if sidesNum == SidesCircle {
-		return math.PI * math.Pow(sideLen, 2)
+		return math.Pi * math.Pow(sideLen, 2)
 	}else if sidesNum == SidesTriangle{
-		return (math.Sqrt(3) * math.pow(sideLen, 2)) / 4
+		return (math.Sqrt(3) * math.Pow(sideLen, 2)) / 4
 	}else if sidesNum == SidesSquare {
 		return math.Pow(sideLen, 2)
 	}else{ 
