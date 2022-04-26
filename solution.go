@@ -1,4 +1,4 @@
-package solution
+package main
 
 import (
 	"fmt"
@@ -22,8 +22,11 @@ func CalcSquare(sideLen float64, sidesNum int64) float64 {
 }
 
 func main() {
-	fmt.Println(CalcSquare(12, 3))
-	fmt.Println(CalcSquare(12, 4))
-	fmt.Println(CalcSquare(12, 0))
+	squareF := int64(4)
+	equilateral_triangle := int64(3)
+	circle := int64(0)
+	fmt.Println(CalcSquare(12, equilateral_triangle))
+	fmt.Println(CalcSquare(12, squareF))
+	fmt.Println(CalcSquare(12, circle))
 	fmt.Println(CalcSquare(12, 2))
 }
