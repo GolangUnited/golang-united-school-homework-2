@@ -1,7 +1,6 @@
 package square
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -19,11 +18,4 @@ func CalcSquare(sideLen float64, sidesNum int64) float64 {
 	}
 
 	return square
-}
-
-func square() {
-	fmt.Println(CalcSquare(12, 3))
-	fmt.Println(CalcSquare(12, 4))
-	fmt.Println(CalcSquare(12, 0))
-	fmt.Println(CalcSquare(12, 2))
 }
