@@ -22,9 +22,6 @@ func CalcSquare(sideLen float64, sidesNum int64) float64 {
 }
 
 func main() {
-	squareF := int64(4)
-	equilateral_triangle := int64(3)
-	circle := int64(0)
 	fmt.Println(CalcSquare(12, 3))
 	fmt.Println(CalcSquare(12, 4))
 	fmt.Println(CalcSquare(12, 0))
