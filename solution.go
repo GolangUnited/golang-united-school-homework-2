@@ -4,12 +4,15 @@ import (
 	"math"
 )
 
-func CalcSquare(sideLen float64, sidesNum int) float64 {
-	SidesSquare := int(4)
+const (
+	SidesCircle   SidesNumber = 0
+	SidesTriangle SidesNumber = 3
+	SidesSquare   SidesNumber = 4
+)
 
-	SidesTriangle := int(3)
+type SidesNumber int
 
-	SidesCircle := int(0)
+func CalcSquare(sideLen float64, sidesNum SidesNumber) float64 {
 
 	square := float64(0)
 
