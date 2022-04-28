@@ -21,7 +21,7 @@ func CalcSquare(sideLen float64, sidesNum SidesNumber) float64 {
 	} else if sidesNum == SidesSquare {
 		square = math.Pow(sideLen, 2)
 	} else if sidesNum == SidesCircle {
-		square = sideLen * math.Pi
+		square = sideLen * math.Pi * 4
 	} else {
 		print("Error. Not calculated because of incorrect data.")
 	}
