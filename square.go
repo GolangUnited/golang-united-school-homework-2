@@ -4,7 +4,7 @@ import (
 	"math"
 )
 
-func CalcSquare(sideLen float64, sidesNum int64) float64 {
+func CalcSquare(sideLen float64, sidesNum int) float64 {
 	square := float64(0)
 	if sidesNum == 3 {
 		sin := math.Sin(math.Pi / 3)
