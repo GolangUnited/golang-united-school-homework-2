@@ -11,6 +11,12 @@ import "math"
 // CalcSquare(10.0, SidesCircle)
 type intCustomType int
 
+const (
+	SidesCircle   intCustomType = 0
+	SidesTriangle intCustomType = 3
+	SidesSquare   intCustomType = 4
+)
+
 func CalcSquare(sideLen float64, sidesNum intCustomType) float64 {
 
 	if sidesNum == 0 {
