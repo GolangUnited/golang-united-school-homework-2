@@ -21,7 +21,7 @@ func CalcSquare(sideLen float64, sidesNum sideNum) float64 {
 	} else if sidesNum == SidesSquare {
 		return sideLen * sideLen
 	}else {
-		var r float64 = (sideLen/(2*math.Pi))
+		var r float64 = (sideLen/(2.0*math.Pi))
 		return math.Pi*r*r
 	}
 }
